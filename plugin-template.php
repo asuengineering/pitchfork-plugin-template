@@ -26,10 +26,6 @@ define( 'STARTER_PLUGIN_BASE_PATH', plugin_dir_path( __FILE__ ) );
 // Function: Deactivate.
 // Function: Execute plugin.
 
-// TGM Plugin Activation Script. Checks for Advanced Custom Fields.
-require_once STARTER_PLUGIN_BASE_PATH . '/tgmpa/class-tgm-plugin-activation.php';
-require_once STARTER_PLUGIN_BASE_PATH . '/tgmpa/dependency-check.php';
-
 // Enqueue scripts.
 require_once STARTER_PLUGIN_BASE_PATH . '/inc/enqueue-scripts.php';
 
