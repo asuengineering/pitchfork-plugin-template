@@ -1,7 +1,11 @@
 const gulp = require('gulp');
 
-// Require GulpWP and pass your local `gulp` instance to it
-const gulpWP = require('gulp-wp')(gulp);
+const config = {
+	// your config here
+};
+
+// Require GulpWP and pass your custom config
+const gulpWP = require('gulp-wp')(gulp, config);
 
 /**
  * Copy assets from node_modules.
