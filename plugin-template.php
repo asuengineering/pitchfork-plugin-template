@@ -5,7 +5,7 @@
  * Description:     (text)
  * Author:          ASU Engineering
  * Author URI:      https://engineering.asu.edu
- * Version:         0.1
+ * Version:         0.0.1
  *
  * @package         starter_plugin
  * Text Domain:     (text)
