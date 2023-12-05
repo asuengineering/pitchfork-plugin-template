@@ -13,10 +13,10 @@
 add_action( 'enqueue_block_assets', 'starter_plugin_enqueue_block_scripts' );
 function starter_plugin_enqueue_block_scripts() {
 
-		$the_plugin     = get_plugin_data( plugin_dir_path( __DIR__ ) . 'pitchfork-plugin-template.php' );
+		$the_plugin     = get_plugin_data( plugin_dir_path( __DIR__ ) . 'plugin-template.php' );
 		$the_version    = $the_plugin['Version'];
-		$plugin_version = $the_version . '.' . filemtime( plugin_dir_path( __DIR__ ) . '/dist/css/plugin.css' );
+		$plugin_version = $the_version . '.' . filemtime( plugin_dir_path( __DIR__ ) . 'dist/css/plugin.css' );
 
-	wp_enqueue_style( 'pitchfork-plugin-template-style', plugin_dir_url( __DIR__ ) . '/dist/css/plugin.css', array(), $plugin_version);
+	wp_enqueue_style( 'pitchfork-plugin-template-style', plugin_dir_url( __DIR__ ) . 'dist/css/plugin.css', array(), $plugin_version);
 
 }
